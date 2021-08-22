@@ -102,7 +102,7 @@
           <h2 class="title-sub-wrap">
             <strong>Retsa</strong>
             <span>发布于</span>
-            <time  class="article-date" datetime="2021-08-19T10:23:41.532Z" itemprop="datePublished">2021-08-19</time>
+            <time  class="article-date" datetime="2021-08-22T10:30:17.447Z" itemprop="datePublished">2021-08-22</time>
           </h2>
           <ul class="wrap-list dark">
   
@@ -131,9 +131,15 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <ul>
-<li>关于 -<br>Retsa<br>Ingress Code Name: ZC19</li>
-</ul>
+        <h1 id="如何实现-CLion-单项文件编译运行"><a href="#如何实现-CLion-单项文件编译运行" class="headerlink" title="如何实现 CLion 单项文件编译运行"></a>如何实现 CLion 单项文件编译运行</h1><pre><code>在配置完 CLion 之后，会遇到同一个项目内只能用一个 main 函数，结合各方法，最终得以解决。
+</code></pre>
+<ol>
+<li><p>首先编辑 CmakeLists.txt</p>
+<figure class="highlight plaintext"><figcaption><span>(GLOB_RECURSE files *.cpp)</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">foreach (file $&#123;files&#125;)</span><br><span class="line">string(REGEX REPLACE &quot;.+/(.+)\\..*&quot; &quot;\\1&quot; exe $&#123;file&#125;)</span><br><span class="line">add_executable ($&#123;exe&#125; $&#123;file&#125;)</span><br><span class="line">message (\ \ \ \ --\ src/$&#123;exe&#125;.cpp\ will\ be\ compiled\ to\ bin/$&#123;exe&#125;)</span><br><span class="line">endforeach ()</span><br></pre></td></tr></table></figure></li>
+<li><p>安装插件 C/C++ Single File Execution</p>
+<p> 准备工作完成，接下来就可以创建一个c/cpp文件，输入代码之后，按 Ctrl+alt+shift+E 快捷键，然后在左边项目区右键选择重新加载，运行。</p>
+</li>
+</ol>
 
       </section>
 
