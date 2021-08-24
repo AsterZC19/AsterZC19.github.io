@@ -133,6 +133,7 @@
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
         <h2 id="如何实现-CLion-单项文件编译运行"><a href="#如何实现-CLion-单项文件编译运行" class="headerlink" title="如何实现 CLion 单项文件编译运行"></a>如何实现 CLion 单项文件编译运行</h2><p>在配置完 CLion 之后，会遇到同一个项目内只能用一个 main 函数，结合各方法，最终得以解决。</p>
 <h2 id="编辑-CmakeLists-txt"><a href="#编辑-CmakeLists-txt" class="headerlink" title="编辑 CmakeLists.txt"></a>编辑 CmakeLists.txt</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">file (GLOB_RECURSE files *.cpp)</span><br><span class="line">foreach (file $&#123;files&#125;)</span><br><span class="line">string(REGEX REPLACE &quot;.+/(.+)\\..*&quot; &quot;\\1&quot; exe $&#123;file&#125;)</span><br><span class="line">add_executable ($&#123;exe&#125; $&#123;file&#125;)</span><br><span class="line">message (\ \ \ \ --\ src/$&#123;exe&#125;.cpp\ will\ be\ compiled\ to\ bin/$&#123;exe&#125;)</span><br><span class="line">endforeach ()</span><br></pre></td></tr></table></figure>
+
 <h2 id="安装插件-C-C-Single-File-Execution"><a href="#安装插件-C-C-Single-File-Execution" class="headerlink" title="安装插件 C/C++ Single File Execution"></a>安装插件 C/C++ Single File Execution</h2><p>准备工作完成，接下来就可以创建一个c/cpp文件，输入代码之后，按 Ctrl+alt+shift+E 快捷键，然后在左边项目区右键选择重新加载，运行。</p>
 
       </section>
@@ -141,20 +142,20 @@
       
         <nav class="article-nav">
           
-          
             <div class="article-nav-item layout-padding">
   <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
     
     <div class="card-text">
       
-        <a href="/2021/08/17/hello-world/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">Hello World</h2>
+        <a href="/2021/08/24/%E8%8B%A5%E6%98%AF%E6%99%93%E7%8F%A0%E6%98%8E%E5%8F%88%E5%AE%9A%EF%BC%8C%E4%B8%80%E7%94%9F%E9%95%BF%E5%AF%B9%E6%B0%B4%E6%99%B6%E7%9B%98/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">若是晓珠明又定，一生长对水晶盘</h2>
         </a>
       
-      <div class="card-text--row">Older</div>
+      <div class="card-text--row">Newer</div>
     </div>
   </article>
 </div>
+          
           
         </nav>
       
