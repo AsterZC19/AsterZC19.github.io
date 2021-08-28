@@ -45,7 +45,7 @@
   <div class="root-container">
     
 <!-- header container -->
-<header class="header-container">
+<header class="header-container post">
   
     <div class="post-image" style="background-image: url(https://qiniu.sukoshi.xyz/src/images/68686407_p0.jpg)"></div>
   
@@ -95,39 +95,105 @@
 
   
   
-
-  
-  
     <div class="header-content">
-      <div class="post-text layout-block layout-padding">
-        <h1 class="title-wrap"></h1>
-        
+      <div class="post-text layout-block">
+        <div class="layout-margin">
+          <h1 class="title-wrap"></h1>
+          <h2 class="title-sub-wrap">
+            <strong>Retsa</strong>
+            <span>发布于</span>
+            <time  class="article-date" datetime="2021-08-28T00:04:16.254Z" itemprop="datePublished">2021-08-28</time>
+          </h2>
+          <ul class="wrap-list dark">
+  
+</ul>
+          <ul class="wrap-list dark">
+  
+</ul>
+        </div>
       </div>
     </div>
+  
+
+  
   
   
 </header>
 
-    <!-- 分页(其他自定义页面) -->
+    <!-- 文章 -->
 
-<!-- 自定义页面 -->
-
+<!-- 文章内容 -->
 <div class="body-container">
   <article class="content-container layout-block post-container">
     <div class="article-info">
       
+      
+      
+      
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <ul>
-<li>关于 -<br>Retsa<br>Ingress Code Name: ZC19</li>
-</ul>
+        <h2 id="1-斐波那契数列-Fibonacci"><a href="#1-斐波那契数列-Fibonacci" class="headerlink" title="1.斐波那契数列 Fibonacci"></a>1.<strong>斐波那契数列</strong> <strong>Fibonacci</strong></h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; n;i++)&#123;</span><br><span class="line">    c = a+b;</span><br><span class="line">    a = b;</span><br><span class="line">    b = c;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-求小数的某一位"><a href="#2-求小数的某一位" class="headerlink" title="2.求小数的某一位"></a>2.<strong>求小数的某一位</strong></h2><p>如果使用double储存商，可能存在位数不足的问题，题目要求  1 $\le$ n $\le$ 10000。</p>
+<p>下为无法 AC 的解法：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> a,b,n;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d %d %d&quot;</span>,&amp;a,&amp;b,&amp;n);</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">double</span> answer = <span class="number">0.0</span>;</span><br><span class="line">    <span class="keyword">int</span> onesPlace = <span class="number">0</span>;</span><br><span class="line">    answer = <span class="number">1.0</span>*a/b;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        answer *= <span class="number">10</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    onesPlace = (<span class="keyword">int</span>)answer%<span class="number">10</span>;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,onesPlace);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>要解决大位数问题，可以将小数前移：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">&#123;</span><br><span class="line">    a%=b,a*=<span class="number">10</span>;</span><br><span class="line">&#125;</span><br><span class="line">	a/=b;</span><br></pre></td></tr></table></figure>
+
+<p>每次 <em>a mod b</em> 其实就是提取该位小数，而 <em>a $\times$ 10</em> 就是整体向左平移一位。最后再除以 <em>b</em> 就能得到最终的答案了。</p>
+<h2 id="3-余数的可加性、可减性和可乘性"><a href="#3-余数的可加性、可减性和可乘性" class="headerlink" title="3.余数的可加性、可减性和可乘性"></a>3.余数的可加性、可减性和可乘性</h2><p>1.可加性</p>
+<p>a与b的和除以c的余数，等于a，b分别除以c的余数之和（或这个和除以c的余数）。</p>
+<p>注意：当余数之和大于除数时，所求余数等于余数之和再除以c的余数。<br>        例如：23，19除以5的余数分别是3和4，所以(23+19)除以5的余数等于(3+4)除以5的余数。</p>
+<p>2.可减性</p>
+<p>与可加性同理。</p>
+<p>3.可乘性</p>
+<p>a与b的乘积除以c的余数，等于a，b分别除以c的余数之积（或这个积除以c的余数）。</p>
+<p>例如：23，16除以5的余数分别是3和1，所以（23$\times$16）除以5的余数等于（3$\times$1）。</p>
+<h3 id="例题-B2074"><a href="#例题-B2074" class="headerlink" title="例题 B2074"></a>例题 B2074</h3><p>假设今天是星期日，那么过 <em>a</em> 的 <em>b</em> 次方天之后是星期几？</p>
+<p>由于题目给定范围，100^10000^ 已超出整型范围，故无法直接计算得出结果，需要使用 <em>余数的可乘性</em> 。</p>
+<p>x^y^ <em>mod</em> 7 $\equiv$ ((x^y-1^ <em>mod</em> 7)$\times$ (x <em>mod</em> 7)) <em>mod</em> 7</p>
+<p>所以使用循环进行拆解。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%d %d&quot;</span>,&amp;a,&amp;b);</span><br><span class="line">	a%=<span class="number">7</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; b;i++)</span><br><span class="line">    &#123;</span><br><span class="line">		ans*=a;</span><br><span class="line">		ans%=<span class="number">7</span>;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+
+
+
 
       </section>
 
       
       
+        <nav class="article-nav">
+          
+          
+            <div class="article-nav-item layout-padding">
+  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
+    
+    <div class="card-text">
+      
+        <a href="/2021/08/24/%E8%8B%A5%E6%98%AF%E6%99%93%E7%8F%A0%E6%98%8E%E5%8F%88%E5%AE%9A%EF%BC%8C%E4%B8%80%E7%94%9F%E9%95%BF%E5%AF%B9%E6%B0%B4%E6%99%B6%E7%9B%98/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">若是晓珠明又定，一生长对水晶盘</h2>
+        </a>
+      
+      <div class="card-text--row">Older</div>
+    </div>
+  </article>
+</div>
+          
+        </nav>
+      
 
-      
-      
+      <section class="page-message-container layout-padding">
+        
+
+
+  
+  
+
+  
+  
+
+
+      </section>
     </div>
     <div class="widget-info">
       <section class="widget-author widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
@@ -163,6 +229,8 @@
 
       
 
+      
+
       <section class="widget-categorys widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
   <div class="widget-title">
     <svg class="icon icon-categories" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -193,7 +261,6 @@
     </div>
   </article>
 </div>
-
 
     <!-- footer container -->
 <footer id="footer" class="footer">
