@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://asterzc19.github.io/about/index.html</loc>
+    
+    <lastmod>2022-09-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://asterzc19.github.io/post/%E9%AB%98%E7%BA%A7%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E9%A2%98%E9%9B%86.html</loc>
     
     <lastmod>2022-08-31</lastmod>
@@ -66,15 +75,6 @@
   
   <url>
     <loc>https://asterzc19.github.io/post/%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF.html</loc>
-    
-    <lastmod>2022-08-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://asterzc19.github.io/about/index.html</loc>
     
     <lastmod>2022-08-30</lastmod>
     
