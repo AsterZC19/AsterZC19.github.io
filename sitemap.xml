@@ -171,6 +171,20 @@
   </url>
   
   <url>
+    <loc>https://asterzc19.github.io/tags/%E9%A2%98%E8%A7%A3/</loc>
+    <lastmod>2022-09-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://asterzc19.github.io/tags/%E9%A2%98%E5%8D%95/</loc>
+    <lastmod>2022-09-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://asterzc19.github.io/tags/Flyme/</loc>
     <lastmod>2022-09-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -186,20 +200,6 @@
   
   <url>
     <loc>https://asterzc19.github.io/tags/MEIZU/</loc>
-    <lastmod>2022-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://asterzc19.github.io/tags/%E9%A2%98%E8%A7%A3/</loc>
-    <lastmod>2022-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://asterzc19.github.io/tags/%E9%A2%98%E5%8D%95/</loc>
     <lastmod>2022-09-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -243,7 +243,14 @@
   </url>
   
   <url>
-    <loc>https://asterzc19.github.io/categories/AcWing/</loc>
+    <loc>https://asterzc19.github.io/categories/CodeForces/</loc>
+    <lastmod>2022-09-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://asterzc19.github.io/categories/AtCoder/</loc>
     <lastmod>2022-09-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -257,14 +264,7 @@
   </url>
   
   <url>
-    <loc>https://asterzc19.github.io/categories/CodeForces/</loc>
-    <lastmod>2022-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://asterzc19.github.io/categories/AtCoder/</loc>
+    <loc>https://asterzc19.github.io/categories/AcWing/</loc>
     <lastmod>2022-09-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
