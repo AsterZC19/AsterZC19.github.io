@@ -243,6 +243,13 @@
   </url>
   
   <url>
+    <loc>https://asterzc19.github.io/categories/%E6%96%87%E7%AB%A0/</loc>
+    <lastmod>2022-09-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://asterzc19.github.io/categories/CodeForces/</loc>
     <lastmod>2022-09-07</lastmod>
     <changefreq>weekly</changefreq>
@@ -258,13 +265,6 @@
   
   <url>
     <loc>https://asterzc19.github.io/categories/AcWing/</loc>
-    <lastmod>2022-09-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://asterzc19.github.io/categories/%E6%96%87%E7%AB%A0/</loc>
     <lastmod>2022-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
