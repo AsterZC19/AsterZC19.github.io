@@ -164,6 +164,13 @@
 
   
   <url>
+    <loc>https://asterzc19.github.io/tags/%E6%A8%A1%E6%9D%BF/</loc>
+    <lastmod>2022-09-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://asterzc19.github.io/tags/Flyme/</loc>
     <lastmod>2022-09-07</lastmod>
     <changefreq>weekly</changefreq>
@@ -179,13 +186,6 @@
   
   <url>
     <loc>https://asterzc19.github.io/tags/MEIZU/</loc>
-    <lastmod>2022-09-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://asterzc19.github.io/tags/%E6%A8%A1%E6%9D%BF/</loc>
     <lastmod>2022-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -250,13 +250,6 @@
   </url>
   
   <url>
-    <loc>https://asterzc19.github.io/categories/AtCoder/</loc>
-    <lastmod>2022-09-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://asterzc19.github.io/categories/AcWing/</loc>
     <lastmod>2022-09-07</lastmod>
     <changefreq>weekly</changefreq>
@@ -265,6 +258,13 @@
   
   <url>
     <loc>https://asterzc19.github.io/categories/%E6%96%87%E7%AB%A0/</loc>
+    <lastmod>2022-09-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://asterzc19.github.io/categories/AtCoder/</loc>
     <lastmod>2022-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
